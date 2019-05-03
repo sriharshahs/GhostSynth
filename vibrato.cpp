@@ -51,7 +51,7 @@ void vibrato(
 	float sinval = sin(phaseStep);
 	sinval = (sinval + 1) * 0.5;
 
-	offset = delay * (1 + sinval * 0.32) * SAMPLERATE;
+	offset = delay * (1 + sinval * depth) * SAMPLERATE;
 
 
 	//printf("Offset %f, delay %d, sinval %f, depth %f, SAMPLERATAE %d\n",offset,
